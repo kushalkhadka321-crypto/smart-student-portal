@@ -8,14 +8,14 @@ Add, update, delete student data (CRUD operations)
 MVC architecture
 Backend integrated with MySQL database
 
--Technologies Used
+-Technologies Used:
 Java
 Spring Boot
 MySQL
 HTML, CSS
 
 -How to Run:
-*Prerequisites
+*Prerequisites:
 Java (JDK 17 or above)
 Maven
 MySQL
