@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Student</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 320px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            margin: 8px 0 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1976D2;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #555;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Update Student</h2>
+
+    <form action="/update" method="post">
+        <input type="hidden" name="id" th:value="${student.id}">
+
+        <label>Name:</label>
+        <input name="name" th:value="${student.name}" placeholder="Enter name">
+
+        <label>Email:</label>
+        <input name="email" th:value="${student.email}" placeholder="Enter email">
+
+        <label>Course:</label>
+        <input name="course" th:value="${student.course}" placeholder="Enter course">
+
+        <button type="submit">Update</button>
+    </form>
+
+    <a href="/dashboard" class="back-link">← Back to Dashboard</a>
+</div>
+
+</body>
+</html>
