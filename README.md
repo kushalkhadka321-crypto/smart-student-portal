@@ -28,5 +28,5 @@ MySQL
 4. Run the command in terminal: mvn spring-boot:run
 5. Open browser and go to: http://localhost:8080
 
-Author
+Author:
 Kushal Khadka
