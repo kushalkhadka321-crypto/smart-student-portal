@@ -1,9 +1,9 @@
 Smart Student Portal
 
--Description
+-Description:
 A full-stack web application to manage student records using Spring Boot and MySQL.
 
--Features
+-Features:
 Add, update, delete student data (CRUD operations)
 MVC architecture
 Backend integrated with MySQL database
@@ -14,7 +14,7 @@ Spring Boot
 MySQL
 HTML, CSS
 
--How to Run
+-How to Run:
 *Prerequisites
 Java (JDK 17 or above)
 Maven
